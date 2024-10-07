@@ -13,7 +13,15 @@ function App() {
 
   const handleDelete = (city: string) => {
     setList(list.filter((item) => item !== city));
+    // const filteredCities = [];
+    // for (let i = 0; i < list.length; i++) {
+    //   if (list[i] !== city) {
+    //     filteredCities.push(list[i]);
+    //   }
+    //   setList(filteredCities);
+    // }
   };
+
   const handleAddItem = () => {
     setList([...list, newCity]);
     setNewCity('');
